@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 import { useEffect } from 'react';
 
 // Componente principal da página inicial
-// Autor: [Seu Nome]
-// Criado: [Data atual]
-// Última atualização: [Data atual]
+// Autor: Willian Pereira
+// Criado: 24/03/2025
+// Última atualização: 24/03/2025
 const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
