@@ -49,12 +49,6 @@ const Hero = () => {
             >
               Iniciar Configuração
             </Link>
-            <Link 
-              to="/components" 
-              className="px-8 py-3 bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 font-medium rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1"
-            >
-              Ver Componentes
-            </Link>
           </div>
         </div>
         

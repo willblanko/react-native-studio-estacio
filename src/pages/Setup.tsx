@@ -5,19 +5,19 @@ import Footer from '../components/Footer';
 import SetupGuide from '../components/SetupGuide';
 
 // Componente da página de configuração
-// Autor: [Seu Nome]
-// Data de implementação: [Data atual]
+// Autor: Willian Pereira
+// Data de implementação: Março de 2024
 // Este componente exibe um guia passo a passo para configuração do ambiente React Native
 const Setup = () => {
   useEffect(() => {
-    // Scroll to top on page load
+    // Rolagem para o topo ao carregar a página
     window.scrollTo(0, 0);
     
     // Registra visualização da página para análises futuras
     console.log('Página de configuração acessada');
     
     // Potencial implementação futura:
-    // trackPageView('setup');
+    // registrarVisualizacaoPagina('setup');
   }, []);
 
   return (

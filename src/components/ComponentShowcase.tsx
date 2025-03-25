@@ -55,14 +55,26 @@ const ComponentShowcase = () => {
             Explore os componentes fundamentais do React Native e aprenda como utilizá-los 
             em seus projetos através de exemplos práticos.
           </p>
+          
+          {/* Highlight for the main components used in App.js example */}
+          <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+            <h3 className="text-lg font-semibold text-amber-800 mb-2">
+              Componentes principais do ponto 5 (Criação do Projeto)
+            </h3>
+            <ul className="flex flex-wrap gap-2 justify-center">
+              <li className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">View</li>
+              <li className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Text</li>
+              <li className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">StyleSheet</li>
+              <li className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">StatusBar</li>
+            </ul>
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-10">
           <ComponentTab name="view" />
           <ComponentTab name="text" />
-          <ComponentTab name="image" />
-          <ComponentTab name="button" />
-          <ComponentTab name="input" />
+          <ComponentTab name="stylesheet" />
+          <ComponentTab name="statusbar" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -87,59 +99,33 @@ const ComponentShowcase = () => {
                 </div>
               )}
               
-              {activeTab === 'image' && (
+              {activeTab === 'stylesheet' && (
                 <div className="h-full w-full bg-white p-4 flex flex-col gap-4">
-                  <div className="w-full h-48 bg-gray-200 rounded-xl flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+                  <div className="w-full p-4 border border-gray-200 rounded-xl">
+                    <div className="h-12 bg-brand-100 rounded-lg mb-3"></div>
+                    <div className="h-20 bg-gray-100 rounded-lg mb-3"></div>
+                    <div className="h-8 bg-red-100 rounded-lg"></div>
                   </div>
-                  <div className="flex gap-2">
-                    <div className="w-1/2 h-32 bg-gray-200 rounded-xl"></div>
-                    <div className="w-1/2 h-32 bg-gray-200 rounded-xl"></div>
-                  </div>
-                </div>
-              )}
-              
-              {activeTab === 'button' && (
-                <div className="h-full w-full bg-white p-8 flex flex-col gap-6 justify-center">
-                  <div className="h-12 bg-brand-500 rounded-lg flex items-center justify-center">
-                    <p className="text-white font-medium">Primary Button</p>
-                  </div>
-                  <div className="h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-800 font-medium">Secondary Button</p>
-                  </div>
-                  <div className="h-12 bg-gray-800 rounded-lg flex items-center justify-center">
-                    <p className="text-white font-medium">Dark Button</p>
-                  </div>
-                  <div className="h-12 bg-red-500 rounded-lg flex items-center justify-center">
-                    <p className="text-white font-medium">Danger Button</p>
+                  <div className="w-full p-4 border border-gray-200 rounded-xl">
+                    <p className="text-xs font-mono mb-2 text-gray-500">StyleSheet.create({'{}'}):</p>
+                    <div className="h-32 bg-gray-50 rounded-lg border border-gray-200"></div>
                   </div>
                 </div>
               )}
               
-              {activeTab === 'input' && (
-                <div className="h-full w-full bg-white p-8 flex flex-col gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Username</label>
-                    <div className="h-12 border border-gray-300 rounded-lg px-4 flex items-center">
-                      <div className="w-full h-5 bg-gray-100 rounded"></div>
+              {activeTab === 'statusbar' && (
+                <div className="h-full w-full bg-white">
+                  <div className="h-8 bg-black"></div>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="h-5 w-20 bg-gray-200 rounded"></div>
+                      <div className="flex gap-2">
+                        <div className="h-4 w-4 bg-gray-200 rounded-full"></div>
+                        <div className="h-4 w-4 bg-gray-200 rounded-full"></div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <div className="h-12 border border-gray-300 rounded-lg px-4 flex items-center">
-                      <div className="w-full h-5 bg-gray-100 rounded"></div>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
-                    <div className="h-12 border border-gray-300 rounded-lg px-4 flex items-center">
-                      <div className="w-3/4 h-5 bg-gray-100 rounded"></div>
-                    </div>
-                  </div>
-                  <div className="h-12 bg-brand-500 rounded-lg flex items-center justify-center">
-                    <p className="text-white font-medium">Submit</p>
+                    <div className="h-32 bg-gray-100 rounded-xl mb-4"></div>
+                    <div className="h-32 bg-gray-100 rounded-xl"></div>
                   </div>
                 </div>
               )}
@@ -155,16 +141,15 @@ const ComponentShowcase = () => {
                 <div className="ml-2 text-sm text-gray-400 font-mono">
                   {activeTab === 'view' && 'ViewExample.tsx'}
                   {activeTab === 'text' && 'TextExample.tsx'}
-                  {activeTab === 'image' && 'ImageExample.tsx'}
-                  {activeTab === 'button' && 'ButtonExample.tsx'}
-                  {activeTab === 'input' && 'InputExample.tsx'}
+                  {activeTab === 'stylesheet' && 'StyleExample.tsx'}
+                  {activeTab === 'statusbar' && 'StatusBarExample.tsx'}
                 </div>
               </div>
               
               <div className="font-mono text-sm text-gray-200 overflow-x-auto">
                 {activeTab === 'view' && (
                   <pre>{`import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 const ViewExample = () => {
   return (
@@ -247,30 +232,23 @@ const styles = StyleSheet.create({
 export default TextExample;`}</pre>
                 )}
                 
-                {activeTab === 'image' && (
+                {activeTab === 'stylesheet' && (
                   <pre>{`import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
-const ImageExample = () => {
+const StyleExample = () => {
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: 'https://picsum.photos/600/400' }}
-        style={styles.mainImage}
-        resizeMode="cover"
-      />
-      <View style={styles.row}>
-        <Image
-          source={{ uri: 'https://picsum.photos/300/300' }}
-          style={styles.smallImage}
-          resizeMode="cover"
-        />
-        <Image
-          source={{ uri: 'https://picsum.photos/301/301' }}
-          style={styles.smallImage}
-          resizeMode="cover"
-        />
+      <View style={styles.section}>
+        <View style={styles.brandBox} />
+        <View style={styles.grayBox} />
+        <View style={styles.accentBox} />
       </View>
+      
+      <Text style={styles.label}>
+        StyleSheet é uma abstração similar ao CSS
+        que otimiza os estilos para React Native
+      </Text>
     </View>
   );
 };
@@ -281,200 +259,115 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 16,
   },
-  mainImage: {
-    width: '100%',
-    height: 200,
-    borderRadius: 12,
-  },
-  row: {
-    flexDirection: 'row',
-    gap: 8,
-  },
-  smallImage: {
-    flex: 1,
-    height: 120,
-    borderRadius: 12,
-  },
-});
-
-export default ImageExample;`}</pre>
-                )}
-                
-                {activeTab === 'button' && (
-                  <pre>{`import React from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-
-const ButtonExample = () => {
-  return (
-    <View style={styles.container}>
-      <TouchableOpacity style={styles.primaryButton} onPress={() => alert('Primary button pressed')}>
-        <Text style={styles.primaryButtonText}>Primary Button</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity style={styles.secondaryButton} onPress={() => alert('Secondary button pressed')}>
-        <Text style={styles.secondaryButtonText}>Secondary Button</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity style={styles.darkButton} onPress={() => alert('Dark button pressed')}>
-        <Text style={styles.darkButtonText}>Dark Button</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity style={styles.dangerButton} onPress={() => alert('Danger button pressed')}>
-        <Text style={styles.dangerButtonText}>Danger Button</Text>
-      </TouchableOpacity>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 32,
-    justifyContent: 'center',
-    gap: 24,
-  },
-  primaryButton: {
-    height: 48,
-    backgroundColor: '#3B82F6',
-    borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  primaryButtonText: {
-    color: 'white',
-    fontWeight: '500',
-  },
-  secondaryButton: {
-    height: 48,
-    backgroundColor: 'white',
+  section: {
+    padding: 16,
     borderWidth: 1,
     borderColor: '#E5E7EB',
-    borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
+    borderRadius: 12,
+    gap: 12,
   },
-  secondaryButtonText: {
-    color: '#1F2937',
-    fontWeight: '500',
-  },
-  darkButton: {
+  brandBox: {
     height: 48,
-    backgroundColor: '#1F2937',
+    backgroundColor: '#EFF6FF',
     borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  darkButtonText: {
-    color: 'white',
-    fontWeight: '500',
-  },
-  dangerButton: {
-    height: 48,
-    backgroundColor: '#EF4444',
+  grayBox: {
+    height: 80,
+    backgroundColor: '#F3F4F6',
     borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  dangerButtonText: {
-    color: 'white',
-    fontWeight: '500',
-  },
-});
-
-export default ButtonExample;`}</pre>
-                )}
-                
-                {activeTab === 'input' && (
-                  <pre>{`import React, { useState } from 'react';
-import { View, TextInput, Text, TouchableOpacity, StyleSheet } from 'react-native';
-
-const InputExample = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  
-  const handleSubmit = () => {
-    alert(JSON.stringify({ username, email, password }, null, 2));
-  };
-  
-  return (
-    <View style={styles.container}>
-      <View style={styles.inputGroup}>
-        <Text style={styles.label}>Username</Text>
-        <TextInput
-          style={styles.input}
-          value={username}
-          onChangeText={setUsername}
-          placeholder="Enter your username"
-        />
-      </View>
-      
-      <View style={styles.inputGroup}>
-        <Text style={styles.label}>Email</Text>
-        <TextInput
-          style={styles.input}
-          value={email}
-          onChangeText={setEmail}
-          placeholder="Enter your email"
-          keyboardType="email-address"
-          autoCapitalize="none"
-        />
-      </View>
-      
-      <View style={styles.inputGroup}>
-        <Text style={styles.label}>Password</Text>
-        <TextInput
-          style={styles.input}
-          value={password}
-          onChangeText={setPassword}
-          placeholder="Enter your password"
-          secureTextEntry
-        />
-      </View>
-      
-      <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
-        <Text style={styles.submitButtonText}>Submit</Text>
-      </TouchableOpacity>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 32,
-    gap: 24,
-  },
-  inputGroup: {
-    gap: 4,
+  accentBox: {
+    height: 32,
+    backgroundColor: '#FEE2E2',
+    borderRadius: 8,
   },
   label: {
     fontSize: 14,
-    fontWeight: '500',
-    color: '#374151',
-    marginBottom: 4,
-  },
-  input: {
-    height: 48,
-    borderWidth: 1,
-    borderColor: '#D1D5DB',
-    borderRadius: 8,
-    paddingHorizontal: 16,
-  },
-  submitButton: {
-    height: 48,
-    backgroundColor: '#3B82F6',
-    borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  submitButtonText: {
-    color: 'white',
-    fontWeight: '500',
+    color: '#4B5563',
+    textAlign: 'center',
   },
 });
 
-export default InputExample;`}</pre>
+export default StyleExample;`}</pre>
+                )}
+                
+                {activeTab === 'statusbar' && (
+                  <pre>{`import React from 'react';
+import { View, Text, StatusBar, StyleSheet } from 'react-native';
+
+const StatusBarExample = () => {
+  return (
+    <View style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#000000"
+      />
+      <View style={styles.header}>
+        <Text style={styles.title}>Meu App</Text>
+        <View style={styles.controls}>
+          <View style={styles.circle} />
+          <View style={styles.circle} />
+        </View>
+      </View>
+      <View style={styles.content}>
+        <Text style={styles.description}>
+          StatusBar permite controlar a barra de status
+          no topo da tela do dispositivo
+        </Text>
+        <Text style={styles.code}>
+          barStyle: 'light-content' | 'dark-content'
+        </Text>
+        <Text style={styles.code}>
+          backgroundColor: string
+        </Text>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    marginBottom: 24,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  controls: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  circle: {
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    backgroundColor: '#E5E7EB',
+  },
+  content: {
+    padding: 16,
+    gap: 16,
+  },
+  description: {
+    fontSize: 16,
+    lineHeight: 24,
+  },
+  code: {
+    fontFamily: 'monospace',
+    fontSize: 14,
+    backgroundColor: '#F3F4F6',
+    padding: 8,
+    borderRadius: 4,
+  },
+});
+
+export default StatusBarExample;`}</pre>
                 )}
               </div>
             </div>

@@ -1,7 +1,6 @@
 
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import ComponentShowcase from '../components/ComponentShowcase';
 import SetupGuide from '../components/SetupGuide';
 import ProjectStructure from '../components/ProjectStructure';
 import Footer from '../components/Footer';
@@ -25,16 +24,19 @@ const Index = () => {
       <Header />
       <main>
         {/* Componente Hero com chamada principal */}
-        <Hero />
-        
-        {/* Seção de demonstração de componentes React Native */}
-        <ComponentShowcase />
+        <section id="hero">
+          <Hero />
+        </section>
         
         {/* Guia passo-a-passo de configuração do ambiente */}
-        <SetupGuide />
+        <section id="setup">
+          <SetupGuide />
+        </section>
         
         {/* Estrutura recomendada para projetos React Native */}
-        <ProjectStructure />
+        <section id="structure">
+          <ProjectStructure />
+        </section>
       </main>
       <Footer />
     </div>
