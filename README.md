@@ -53,7 +53,7 @@ npm install
 npm run dev
 ```
 
-5. Acesse a aplicação em `http://localhost:5173`
+5. Acesse a aplicação em `http://localhost:8080`
 
 ## Contribuindo
 
