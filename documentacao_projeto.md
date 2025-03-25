@@ -7,8 +7,6 @@
 
 O desenvolvimento de aplicativos móveis tornou-se uma habilidade essencial no mercado de tecnologia atual. Com a crescente demanda por aplicações multiplataforma, o React Native emergiu como uma solução poderosa que permite aos desenvolvedores criar aplicativos nativos para iOS e Android a partir de uma única base de código JavaScript/TypeScript. No entanto, iniciantes frequentemente enfrentam dificuldades na configuração do ambiente de desenvolvimento e na compreensão das melhores práticas.
 
-Este projeto surge como resposta a essa necessidade, fornecendo um guia interativo e educacional que facilita o aprendizado do React Native para estudantes da disciplina de Programação Para Dispositivos Móveis em Android na Universidade Estácio de Sá.
-
 ### 1.2 JUSTIFICATIVA
 
 A escolha do tema "React Native Studio" baseia-se em três pilares fundamentais:
@@ -159,11 +157,7 @@ A implementação do React Native Studio resultou em uma aplicação web educaci
 
 2. **Guia de Configuração**: Tutorial interativo passo a passo detalhando a instalação e configuração do ambiente React Native, com instruções específicas para diferentes sistemas operacionais.
 
-3. **Demonstração de Componentes**: Seção interativa que apresenta os principais componentes do React Native (View, Text, Image, Button, Input, etc.), com exemplos de código e visualização do resultado.
-
-4. **Estrutura de Projetos**: Recomendações sobre organização de código, com visualização da estrutura de diretórios e arquivos em um projeto React Native bem estruturado.
-
-5. **Recursos Adicionais**: Compilação de links, tutoriais, ferramentas e bibliotecas recomendadas para aprofundamento no desenvolvimento React Native.
+3. **Estrutura de Projetos**: Recomendações sobre organização de código, com visualização da estrutura de diretórios e arquivos em um projeto React Native bem estruturado.
 
 O resultado final cumpre todos os objetivos inicialmente propostos, oferecendo uma plataforma educacional abrangente e acessível para estudantes de desenvolvimento mobile.
 
@@ -280,19 +274,15 @@ TAILWIND CSS. **Tailwind CSS Documentation**. Disponível em: <https://tailwindc
 ### 5.1 CÓDIGO-FONTE
 
 O código-fonte completo do projeto está disponível no repositório GitHub:
-[https://github.com/seu-usuario/react-native-studio-estacio](https://github.com/seu-usuario/react-native-studio-estacio)
+[https://github.com/willblanko/react-native-studio-estacio](https://github.com/willblanko/react-native-studio-estacio)
 
-### 5.2 CAPTURAS DE TELA
-
-[Nesta seção, incluir capturas de tela das principais telas da aplicação]
-
-### 5.3 INSTRUÇÕES DE INSTALAÇÃO E EXECUÇÃO
+### 5.2 INSTRUÇÕES DE INSTALAÇÃO E EXECUÇÃO
 
 Para executar o projeto localmente:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/react-native-studio-estacio.git
+git clone https://github.com/willblanko/react-native-studio-estacio.git
 ```
 
 2. Entre no diretório do projeto:
