@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 import ProjectStructure from '../components/ProjectStructure';
 
 // Componente da página de estrutura de projetos
-// Autor: [Seu Nome]
-// Data de implementação: [Data atual]
+// Autor: Willian Pereira
+// Data de implementação: 24/03/2025
 // Este componente apresenta as melhores práticas para organização de código em projetos React Native
 const Structure = () => {
   useEffect(() => {
