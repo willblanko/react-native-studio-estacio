@@ -102,7 +102,7 @@ const Header = () => {
                 Estrutura
               </a>
               <a 
-                href="https://github.com/seu-usuario/react-native-studio" 
+                href="https://github.com/willblanko/react-native-studio-estacio" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-full transition-all duration-300 hover:bg-gray-100"
