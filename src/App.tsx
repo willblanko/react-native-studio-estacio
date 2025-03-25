@@ -21,8 +21,8 @@ const queryClient = new QueryClient({
 });
 
 // Componente principal da aplicação
-// Autor: [Seu Nome]
-// Última atualização: [Data atual]
+// Autor: Willian Pereira
+// Última atualização: 24/03/2025
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
