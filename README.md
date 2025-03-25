@@ -35,12 +35,12 @@ src/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/react-native-studio.git
+git clone https://github.com/seu-usuario/react-native-studio-estacio.git
 ```
 
 2. Entre no diretório do projeto:
 ```bash
-cd react-native-studio
+cd react-native-studio-estacio
 ```
 
 3. Instale as dependências:
