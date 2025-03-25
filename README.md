@@ -36,7 +36,7 @@ src/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/react-native-studio.git
+git clone https://github.com/willblanko/react-native-studio-estacio.git
 ```
 
 2. Entre no diretório do projeto:
@@ -58,13 +58,11 @@ npm run dev
 
 ## Autoria e Contribuições
 
-Este projeto foi desenvolvido por [Seu Nome] como parte de um trabalho acadêmico para a disciplina de [Nome da Disciplina] na [Nome da Instituição].
+Este projeto foi desenvolvido por Willian Pereira como parte de um trabalho acadêmico para a disciplina Programação Para Dispositivos Móveis em Android na Universidade Estácio de Sá.
 
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ## Agradecimentos
-
-- Professores e colegas que forneceram feedback durante o desenvolvimento
 - Comunidade React Native pelo suporte e documentação
