@@ -41,7 +41,7 @@ git clone https://github.com/willblanko/react-native-studio-estacio.git
 
 2. Entre no diretório do projeto:
 ```bash
-cd react-native-studio
+cd react-native-studio-estacio
 ```
 
 3. Instale as dependências:
