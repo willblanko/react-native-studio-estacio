@@ -11,6 +11,8 @@ import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 
 // Configuração do cliente de consulta
+// Autor: Willian Pereira
+// Última atualização: 24/03/2025
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
